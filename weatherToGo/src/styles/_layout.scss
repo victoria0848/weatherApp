@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+header {
+  background-color: $primary-color;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: $spacing;
+
+  a {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+main {
+  padding: $spacing;
+}
+
+footer {
+  text-align: center;
+  padding: $spacing;
+  font-size: 0.9rem;
+}
+// TABLET
+@media (min-width: 768px) {
+  nav {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
