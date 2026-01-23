@@ -1,10 +1,8 @@
-import { Routes, Route } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navigation from "./components/Navigation";
-import Home from "./pages/Home";
-import Forecast from "./pages/Forecast";
-import About from "./pages/About";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
     <>
       <header>
@@ -12,18 +10,12 @@ function App() {
       </header>
 
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/forecast" element={<Forecast />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <Outlet />
       </main>
 
-      <footer>
-        <p>Vejr App – Open-Meteo</p>
-      </footer>
+      <Footer />
     </>
   );
-}
+};
 
 export default App;

@@ -15,12 +15,12 @@ const About = () => {
       <p>Links:</p>
       <ul>
         <li>
-          <a href="https://open-meteo.com/" target="_blank">
+          <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">
             Open-Meteo API
           </a>
         </li>
         <li>
-          <a href="https://react.dev/" target="_blank">
+          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
             React
           </a>
         </li>

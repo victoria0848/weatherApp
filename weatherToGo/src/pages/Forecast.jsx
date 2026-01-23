@@ -17,7 +17,9 @@ const Forecast = () => {
 
       <ul>
         {days.map((temp, index) => (
-          <li key={index}>Dag {index + 1}: {temp} °C</li>
+          <li key={index}>
+            Dag {index + 1}: {temp} °C
+          </li>
         ))}
       </ul>
     </section>
